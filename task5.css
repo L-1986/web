@@ -140,7 +140,7 @@ header button:hover {
     min-height: 600px;
     background: 
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('...hero.webp') center/cover;
+        url('..hero.webp') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

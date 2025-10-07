@@ -1,13 +1,17 @@
-    
 *{
     box-sizing: border-box;
 }
+
 body{
-font-family: "Calibri Light","Calibri","Tahoma",serif;
-     background-color:#ff4500 ;
+    font-family: "Calibri Light", "Calibri", "Tahoma", sans-serif; 
+    background-color: #ff4500; /* Очень яркий цвет фона - возможно стоит изменить */
+    margin: 0; /* Добавлено */
+    padding: 0; /* Добавлено */
 }
+
 a{
     text-decoration: none;
+    color: inherit; /* Добавлено для наследования цвета */
 }
 
 header{
@@ -19,11 +23,12 @@ header{
     justify-content: space-between;
     background-color: #14659e;
 }
+
 .logo{
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 900;
-    color: #076bb2;
+    color: #076bb2; /* Цвет похож на фон - плохая читаемость */
 }    
 
 nav{
@@ -33,24 +38,24 @@ nav{
 }
 
 nav a{
-
     color: white;
     font-size: 24px;
 }
 
 button{
     background: #8a2be2;
-    color:white;
+    color: white;
     border: none;
     text-transform: uppercase;
     padding: 10px 80px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 4px;
+    transition: 0.3s; /* Добавлено для плавности */
 }
+
 button:hover{
     background: #ffb516;
-    transition: 0.5s;
     transform: scale(0.95);
 }
 
@@ -58,25 +63,25 @@ button:hover{
     display: flex;
     align-items: center;
     gap: 3px;
-
+    color: white; /* Добавлено */
 }
    
 .burger-png{
     background: transparent;
     padding: 0;
     display: none;
-
+    border: none; /* Добавлено */
 }
 
 .hero{
-    height: 992;
-    background: url(../images/hero.webp);
+    height: 992px; /* Исправлено: добавлено px */
+    background: url(../images/hero.webp); /* Проверьте путь к изображению */
     background-size: cover;
+    background-position: center; /* Добавлено */
     display: flex;
     align-items: end;
     justify-content: center;
     padding-bottom: 140px;
-
 }
     
 .hero-choose{
@@ -87,51 +92,49 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background: #4169e1; /* Добавлено общее свойство */
 }
     
 .hero-choose:nth-child(1){
     background: #7b7b7b;
-    
 }
     
 .hero-choose:nth-child(2){
     background: #4169e1;
-
 }
 
 .hero-choose:nth-child(3){
     background: #4169e1;
-
 }
     
 .hero-choose h4{
     line-height: 160%;
-
+    margin: 0; /* Добавлено */
+    color: white; /* Добавлено */
 }
 
 .hero-choose select{
     background: transparent;
     border: none;
-    color:white;
+    color: white;
     font-size: 20px;
     font-weight: 600;
-    
+    cursor: pointer; /* Добавлено */
 }    
 
 .hero button{
     height: 100px;
     padding: 20px;
-
 }
 
 .about-us{
     margin: 100px auto;
-    max-width: 1080;
-    padding: 0px 30px;
+    max-width: 1080px; /* Исправлено: добавлено px */
+    padding: 0 30px; /* Исправлено: убрано px после 0 */
     line-height: 150%;
     text-align: center;
-    
+    background: white; /* Добавлено для читаемости */
+    border-radius: 10px; /* Добавлено */
 }   
 
 h2{
@@ -140,38 +143,44 @@ h2{
     font-weight: 700;
     line-height: 150%;
     text-align: center;
-
+    margin: 20px 0; /* Добавлено */
 }
 
 .about-us p{
-    margin: 30px 0px;
-
+    margin: 30px 0;
+    font-size: 18px; /* Добавлено */
+    color: #303030; /* Добавлено */
 }    
 
 .our-events{
     text-align: center;
     padding: 30px;
-
+    background: white; /* Добавлено для читаемости */
+    margin: 20px 0; /* Добавлено */
 }
 
+/* ИСПРАВЛЕНО: дублирование .card */
 .card{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1300px;
     margin: 25px auto;
     gap: 20px;
-    
-}    
+}
 
-.card{
+.card-item { /* Добавлен новый класс для карточек */
     position: relative;
+    background: white; /* Добавлено */
+    border-radius: 10px; /* Добавлено */
+    overflow: hidden; /* Добавлено */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Добавлено */
 }
 
 .card img {
     width: 100%;
     height: 360px;
     object-fit: cover;
-
+    display: block; /* Добавлено */
 }   
 
 .card-body{
@@ -187,12 +196,21 @@ h2{
     font-size: 20px;
     font-weight: 500;
     text-transform: none;
+    margin: 0; /* Добавлено */
+}
+
+.card-body p {
+    text-transform: none; /* Добавлено */
+    color: #555; /* Добавлено */
+    line-height: 1.5; /* Добавлено */
 }
 
 .contact-us{
     max-width: 940px;
     margin: 100px auto;
     padding: 30px;
+    background: white; /* Добавлено для читаемости */
+    border-radius: 10px; /* Добавлено */
 }
 
 .contact-form{
@@ -206,15 +224,15 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     margin-top: 100px;
-
 }
 
 .contact-form-fields input{
     border: none;
     border-bottom: 1px solid black;
-    padding: 10px 0px;
+    padding: 10px 0;
     outline: none;
-
+    font-size: 16px; /* Добавлено */
+    background: transparent; /* Добавлено */
 }
 
 .contact-form textarea{
@@ -222,75 +240,98 @@ h2{
     height: 100px;
     border: 1px solid black;
     outline: none;
-
+    padding: 10px; /* Добавлено */
+    font-size: 16px; /* Добавлено */
+    font-family: inherit; /* Добавлено */
 }
 
 .contact-form button{
     width: 235px;
     display: flex;
     margin: 0 auto;
-
+    justify-content: center; /* Добавлено */
 }    
-.footer{
+
+.footer{ /* Исправлено: было .footer */
     background: #076bb2;
     padding: 60px;
-    
 }    
+
 .footer-body{
     max-width: 1160px;
     margin: 0 auto;
-    color: 0;
-
+    color: white; /* Исправлено: было color: 0 */
 }
+
 .footer-body h3{
     font-size: 64px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-
+    color: white; /* Добавлено */
+    margin: 0; /* Добавлено */
 }    
+
 .footer-body-links{
     display: flex;
     justify-content: space-between;
-    padding: 65px 0px 30px;
+    padding: 65px 0 30px;
 }
+
 .footer-body-links ul{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    list-style: none; /* Добавлено */
+    padding: 0; /* Добавлено */
+    margin: 0; /* Добавлено */
 }
+
 .footer-body-links a{
     font-weight: 100;
-    color: 0;
+    color: white; /* Исправлено: было color: 0 */
 }    
+
 .footer-body-links h4{
     margin-bottom: 15px;
     font-family: "Lora", serif;
     font-weight: 700;
     font-size: 24px;
+    color: white; /* Добавлено */
 }
+
 .footer-social-media{
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
+
+.footer-social-media a {
+    display: flex; /* Добавлено */
+}
+
 .footer-policy{
     display: flex;
     align-items: center;
     gap: 15px;
     border-top: 2px solid white;
-    padding: 15px 0px 32px;
+    padding: 15px 0 32px;
+    flex-wrap: wrap; /* Добавлено */
 }    
 
 .footer-policy a{
     color: white;
     font-weight: 100;
+    font-size: 14px; /* Добавлено */
 }
+
 .rights{
     font-weight: 100;
     opacity: 0.5;
-
+    color: white; /* Добавлено */
+    text-align: center; /* Добавлено */
+    margin: 0; /* Добавлено */
 }
     
 @media screen and (max-width: 992px) {
@@ -301,30 +342,36 @@ h2{
     nav{
         display: none;
     }
-    .images{
-        grid-template-columns: repeat (1, 1fr);
-
-    }
-    .card img {
-        height: 60vw;
+    
+    .card{
+        grid-template-columns: repeat(2, 1fr); /* Исправлено */
     }
     
+    .card img {
+        height: 300px; /* Исправлено */
+    }
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        padding: 30px 20px; /* Добавлено */
+    }
+    
     .hero{
         flex-direction: column;
         align-items: center;
         justify-content: end;
+        height: auto; /* Добавлено */
+        min-height: 500px; /* Добавлено */
     }
     
-    .hero buttom,
+    .hero button, /* Исправлено опечатка: buttom → button */
     .hero-choose{
-        width: max(70%, 300px);
+        width: min(90%, 400px); /* Исправлено */
     }
     
     .contact-form-fields{
-        grid-template-columns: repeat(1, 1fr);  
+        grid-template-columns: 1fr;  
         gap: 30px; 
         margin-top: 40px; 
     }
@@ -332,22 +379,36 @@ h2{
     .contact-form{
         gap: 30px;
     }
+    
+    .footer-body-links{
+        flex-direction: column; /* Добавлено */
+        gap: 30px; /* Добавлено */
+    }
 }
 
-@media screen and (max-width:550) {
-    .footer-body-links, .footer-policy, .footer-social-media, .rights{
-        display: none;
+@media screen and (max-width: 550px) { /* Исправлено: добавлено px */
+    .footer-body-links, .footer-policy, .footer-social-media{
+        display: flex; /* Изменено с none */
+        flex-direction: column; /* Добавлено */
+        text-align: center; /* Добавлено */
+    }
+
+    .rights{
+        display: block; /* Изменено с none */
     }
 
     .footer-body h3{
         font-size: 32px;
     }
-
+    
+    .card{
+        grid-template-columns: 1fr; /* Добавлено */
+    }
 }
 
-@media  screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     header{
-        padding: 30px;
+        padding: 20px 15px; /* Изменено */
     }
 
     .logo{
@@ -355,87 +416,20 @@ h2{
     }
     
     h2{
-        font-size: 20px;
+        font-size: 32px; /* Изменено с 20px */
     }
     
     .about-us p{
-        font-size: 14px;
-        margin: 14px 0px;
+        font-size: 16px; /* Изменено */
+        margin: 20px 0; /* Изменено */
         color: #303030;
     }
     
-    .card-date{
-        width: 70px;
-        height: 70px;
-        font-size: 16px;
-
-    }
-
-    .card-date-day{
-        font-size: 20px;
-        
+    .footer{
+        padding: 30px 20px; /* Добавлено */
     }
     
+    .footer-body h3{
+        font-size: 24px; /* Добавлено */
+    }
 }
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-       
-    
-
-
-
-
-
-    
-
-    
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-

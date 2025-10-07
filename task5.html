@@ -1,193 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru"> 
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Белый парус</title> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/task5.css">
 </head>
 
 <body>
     <header>
-<button class="burger-png">
-    <img src="icons/burger-menu.png" alt="">
+        <button class="burger-png">
+            <img src="icons/burger-menu.png" alt="Меню">
+        </button>
 
-</button>
+        <a href="task5.html" class="logo">Белый парус</a>
+        
+        
+        <nav>
+            <a href="#about-us">О нас</a>
+            <a href="#our-events">Банкеты</a>
+            <a href="#contact-us">Контакты</a>
+            <button>Забронировать</button>
+        </nav>
+        
+        <div class="lang">
+            <img src="icons/lang.png" alt="Смена языка">   
+            <span>Ru</span>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero"> 
+            <div class="hero-choose">
+                <h4>График работы</h4>
+                <select name="" id="">
+                    <option value="">Ежедневно</option> 
+                </select>
+            </div>
 
+            <div class="hero-choose">
+                <h4>Время посещения</h4>
+                <select name="" id="">
+                    <option value="">12:00-23:00</option>
+                </select>
+            </div>
 
+            <div class="hero-choose">
+                <h4>Пн-Вс</h4>
+                <select name="" id="">
+                    <option value="">Без выходных</option> 
+                </select>
+            </div>
+            <button>Забронировать</button>
+        </section>
 
-   <a href="task5.html" class="logo">Белый парус</a>
-   <img src="images/hero.webp" alt=""></a>
-<nav>
-<a href="#about-us">О нас</a>
-<a href="#our-events">Банкеты</a>
-<a href="#contact-us">Контакты</a>
-<button>Забронировать</button>
+        <section class="about-us"> 
+            <h2 id="about-us">О нас</h2> 
+            <p>Наш ресторан объединил в себе современный, изысканный интерьер и отменную кухню. Команда заведения чтит традиции и использует уникальные рецепты, тщательно следит за качеством ингредиентов.</p> <!-- Добавлен закрывающий тег p -->
+        </section>
 
-</nav>
-<div class="lang">
-<img src="icons/lang.png" alt="Логотип">   
-<span>Ru</span>
-</div>
-  </header>
-<main>
-<section class="hero.webp">
-<div class="hero-choose">
-<h4>График  работы </h4>
-<select name="" id="">
-    <option value="">Ежедневно<Select></Select></option>
-</select>
-</div>
+        <section class="our-events">
+            <h2 id="our-events">Банкеты</h2>
+            <div class="card">
+                <img src="images/poto1.jpg" alt="Зал с камином">
+                <div class="card-body">
+                    <h4>Зал с камином</h4>
+                    <p>Выбор ресторана с камином предоставляет ряд ощутимых преимуществ‚ которые делают посещение такого заведения особенно привлекательным. В первую очередь‚ это неповторимая атмосфера уюта и тепла. Живой огонь‚ потрескивание дров создают расслабляющую обстановку‚ идеальную для отдыха и общения. В отличие от обычных ресторанов‚ где акцент делается исключительно на еде‚ здесь вы получаете полноценный опыт‚ включающий визуальное и эмоциональное наслаждение.</p> 
+                    <button>Подробнее</button>
+            </div>
 
-<div class="hero-choose">
-<h4>Время посещения </h4>
-<select name="" id="">
-    <option value=""> 12:00-23:00</Select></option>
-</select>
-</div>
+            <div class="card">
+                <img src="images/poto2.jpg" alt="Банкетный зал">
+                <div class="card-body">
+                    <h4>Зал</h4>
+                    <p>Банкетный зал на 60 человек</p> 
+                    <button>Подробнее</button> 
+            </div>
 
-<div class="hero-choose">
-<h4>Пн-Вс</h4>
-<select name="" id="">
-    <option value="">Без выходных</Select></option>
-</select>
-</div>
-<button>Забронировать </button>
-</section>
-<section class="abount-us">
-<h2 id="abount-us">О нас</h2>
-<p>Наш ресторан объединил в себе современный, изысканный интерьер и отменную кухню. Команда заведения чтит традиции и использует уникальные рецепты, тщательно следит за качеством ингредиентов.
+            <div class="card">
+                <img src="images/poto3.jpg" alt="Десерты">
+                <div class="card-body">
+                    <h4>Десерты</h4>
+                    <p>В ресторане Белый парус можно попробовать очень вкусные и нежные десерты</p> 
+                    <button>Подробнее</button> 
+                </div>
+            </div>
 
-</section>
-<section class="our-events">
-<h2 id="our-events">Банкеты</h2>
-<div class="card">
-<img src="images/poto1.jpg" alt="">
-<div class="card-body">
-<h4>Зал с камином</h4>
-<p></p>Выбор ресторана с камином предоставляет ряд ощутимых преимуществ‚ которые делают посещение такого заведения особенно привлекательным. В первую очередь‚ это неповторимая атмосфера уюта и тепла. Живой огонь‚ потрескивание дров создают расслабляющую обстановку‚ идеальную для отдыха и общения. В отличие от обычных ресторанов‚ где акцент делается исключительно на еде‚ здесь вы получаете полноценный опыт‚ включающий визуальное и эмоциональное наслаждение.</p> 
-<button><Button1>Подробнее</button>
-</div>
-</div>
+            <div class="card">
+                <img src="images/poto4.jpg" alt="Торжественный зал">
+                <div class="card-body">
+                    <h4>Торжественный зал</h4>
+                    <p>Ресторан «Белый парус» — это место, где вы можете провести любое мероприятие, будь то свадьба, выпускной или юбилей. В ресторане есть несколько залов, каждый из которых имеет свой уникальный интерьер и вид на набережную.</p>
+                    <button>Подробнее</button> 
+                </div>
+            </div>
+        </section>
 
-<div class="card">
-<img src="images/poto2.jpg" alt="">
-<div class="card-body">
-<h4>Зал</h4>
-<p>Банкетный зал на 60человек</p>
-<button class="button2">Подробнее</button>
-</div>
-</div>
+        <section class="contact-us">
+            <h2 id="contact-us">Контакты</h2>
+            <form action="" class="contact-form">
+                <div class="contact-form-fields">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="text" placeholder="Фамилия" required>
+                    <input type="text" placeholder="Город" required>
+                    <input type="tel" placeholder="Телефон" required> 
+                    <input type="email" placeholder="Email" required> 
+                </div>
+                <textarea name="" id="" required placeholder="Комментарии"></textarea> 
+                <button type="submit">Отправить</button> 
+            </form>
+        </section>
+    </main>
 
-<div class="card">
-<img src="images/poto3.jpg" alt="">
-<div class="card-body">
-<h4>Десерты</h4>
-<p>В ресторане Белый парус ,можно попробовать очень вкусные и нежные десерты</p>
-<button class="button3">Подробнее</button>
-</div>
-</div>
-
-<div class="card">
-<img src="images/poto4.jpg" alt="">
-<div class="card-body">
-<h4>Торжественный зал</h4>
-<p>Ресторан «Белый парус» — это место, где вы можете провести любое мероприятие, будь то свадьба, выпускной или юбилей. В ресторане есть несколько залов, каждый из которых имеет свой уникальный интерьер и вид на набережную.</p>
-<button class="button4">Подробнее</button>
-</div>
-
-</div>
-
-</section>
-<section class="contact-us">
-<h2 id="contact-us">Контакты</h2>
-<form action=""  class="contact-form">
-    <div class="contact-form-fields">
-<input type="text" placeholder="Имя" required>
-<input type="text" placeholder="Фамилия" required>
-<input type="text" placeholder="Город" required>
-<input type="text" placeholder="Телефон" required>
-<input type="text" placeholder="email*" required>   
-</div>
-<textarea name="" id="" required placeholder="Коментарии*"></textarea>
-<button>Отправить</button>
-</form>
-
-
-
-
-</section>
-
-
-</main>
-
-<footer>
-<section class="footer-body">
-
-<h3><a href="task5.html" class="logo"><img src="icons/lang.png" alt=""></a></h3>
-<div class="footer-body-links">
-    <ul>
-
-
- <li><a href="#">Ресторан «Белый парус» Нижний Новгород ,ул.Слобода Печеры д. 98с</a></li>
- <li><a href="#">Телефон 8910-889-60-65</a></li>
-
-    </ul>
-    <ul>
-<h4>Правила</h4>
- 
-  <li><a href="#">Правовая информация</a></li>
-<li><a href="#">Правила обработки персональных данных</a></li>
-
-</ul>
-<ul>
-<h4>Пользовательское соглашение</h4>
-
-</ul>
-
-
-</div>
-<div class="footer-social-media">
-    <h4>Социальные сети </h4>
-<a href="#"><img src="icons/facebook.png" alt=""></a>
-<a href="#"><img src="icons/instagram.png" alt=""></a>
-</div>
- <div class="footer-policy">
-<a href="#">Legal Notice</a>
-<a href="#">Privacy Policy</a>
-<a href="#">Cookie Preferences</a>
-<a href="#">Cookie Accessabiliti Policy</a>
- </div>
-<p class="rights">
-    ©2022 Все права защищены
-</p>
-
-
-
-</section>
-
-
-
-</footer>
-
-
-
+    <footer>
+        <section class="footer-body">
+            <h3><a href="task5.html" class="logo">Белый парус</a></h3> 
+            
+            <div class="footer-body-links">
+                <ul>
+                    <li><a href="#">Ресторан «Белый парус» Нижний Новгород, ул. Слобода Печеры д. 98с</a></li> 
+                    <li><a href="tel:+79108896065">Телефон 8910-889-60-65</a></li> 
+                </ul>
+                
+                <ul>
+                    <h4>Правила</h4>
+                    <li><a href="#">Правовая информация</a></li>
+                    <li><a href="#">Правила обработки персональных данных</a></li>
+                </ul>
+                
+                <ul>
+                    <h4>Пользовательское соглашение</h4>
+                    <li><a href="#">Ознакомиться</a></li> 
+                </ul>
+            </div>
+            
+            <div class="footer-social-media">
+                <h4>Социальные сети</h4>
+                <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            </div>
+            
+            <div class="footer-policy">
+                <a href="#">Legal Notice</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Cookie Accessibility Policy</a> 
+            </div>
+            
+            <p class="rights">
+            </p>
+        </section>
+    </footer>
 </body>
-
 </html>
-
-    
-
-
-
-
-
-
-
-
-
 
 
